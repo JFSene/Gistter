@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	}
 
 	func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
-		if "ppoauthapp" == url.scheme || (url.scheme?.hasPrefix("com.googleusercontent.apps"))! {
+		if "ppoauthapp" == url.scheme {
 			if let vc = window?.rootViewController as? LoginViewController {
 				vc.oauth2.handleRedirectURL(url)
 				return true

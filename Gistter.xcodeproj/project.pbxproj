@@ -11,6 +11,7 @@
 		1782CAD920F6F4D000608E23 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1782CAD620F6F4D000608E23 /* APIManager.swift */; };
 		1782CADA20F6F4D000608E23 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1782CAD720F6F4D000608E23 /* APIRouter.swift */; };
 		1782CADC20F70A5D00608E23 /* QRCodeReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1782CADB20F70A5D00608E23 /* QRCodeReaderViewController.swift */; };
+		1782CADE20F718EA00608E23 /* CodeScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1782CADD20F718EA00608E23 /* CodeScannerViewController.swift */; };
 		17B6CD2F20F6897D00FA0515 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B6CD2E20F6897D00FA0515 /* AppDelegate.swift */; };
 		17B6CD3420F6897E00FA0515 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17B6CD3220F6897E00FA0515 /* Main.storyboard */; };
 		17B6CD3620F6897E00FA0515 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17B6CD3520F6897E00FA0515 /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 		1782CAD620F6F4D000608E23 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		1782CAD720F6F4D000608E23 /* APIRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
 		1782CADB20F70A5D00608E23 /* QRCodeReaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QRCodeReaderViewController.swift; path = ViewControllers/QRCodeReaderViewController.swift; sourceTree = "<group>"; };
+		1782CADD20F718EA00608E23 /* CodeScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CodeScannerViewController.swift; path = ViewControllers/CodeScannerViewController.swift; sourceTree = "<group>"; };
 		17B6CD2B20F6897D00FA0515 /* Gistter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gistter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17B6CD2E20F6897D00FA0515 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17B6CD3320F6897E00FA0515 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 			children = (
 				17B6CD4420F696E800FA0515 /* LoginViewController.swift */,
 				17B6CD4820F6998600FA0515 /* HomeViewController.swift */,
+				1782CADD20F718EA00608E23 /* CodeScannerViewController.swift */,
 				1782CADB20F70A5D00608E23 /* QRCodeReaderViewController.swift */,
 			);
 			name = ViewControllers;
@@ -253,6 +256,7 @@
 				1782CADC20F70A5D00608E23 /* QRCodeReaderViewController.swift in Sources */,
 				1782CAD920F6F4D000608E23 /* APIManager.swift in Sources */,
 				17B6CD2F20F6897D00FA0515 /* AppDelegate.swift in Sources */,
+				1782CADE20F718EA00608E23 /* CodeScannerViewController.swift in Sources */,
 				17B6CD4920F6998600FA0515 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

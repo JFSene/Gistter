@@ -9,4 +9,5 @@ target 'Gistter' do
 	pod 'ObjectMapper'
   	pod 'Alamofire'
 	pod 'p2.OAuth2', '~> 3.0'
+	pod 'BarcodeScanner'
 end
