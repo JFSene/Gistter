@@ -44,7 +44,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        loginButton.setTitle("Sign in with GitHub", for: .normal)
+        loginButton.setTitle("Try it Free With ", for: .normal)
     }
 
 	override func viewWillDisappear(_ animated: Bool) {
@@ -137,7 +137,7 @@ class LoginViewController: UIViewController {
 					let data = try response.responseData()
 					DispatchQueue.main.async {
 						self.userImage = UIImage(data: data)
-						self.loginButton.setTitle("Sign in with GitHub", for: .normal)
+						self.loginButton.setTitle("Try it Free With ", for: .normal)
 						self.presentHome(self.userImage!, segueIdentifier: "showHome")
 					}
 				}
