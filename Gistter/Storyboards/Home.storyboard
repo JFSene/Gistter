@@ -101,7 +101,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t2E-Y0-vr1">
-                                <rect key="frame" x="16" y="430" width="288" height="50"/>
+                                <rect key="frame" x="0.0" y="430" width="320" height="50"/>
                                 <color key="backgroundColor" red="0.58431375029999999" green="0.59607845540000004" blue="0.60392159219999997" alpha="1" colorSpace="deviceRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="k54-he-SVj"/>
@@ -110,6 +110,9 @@
                                 <state key="normal" title="QRCODE">
                                     <color key="titleColor" red="0.98039215800000001" green="0.98039215800000001" blue="0.98039215800000001" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="callCameraButtonTapped:" destination="KZa-Gx-vSk" eventType="touchUpInside" id="NTC-My-1kH"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.94117647410000005" green="0.94117647410000005" blue="0.94117647410000005" alpha="1" colorSpace="deviceRGB"/>
@@ -117,8 +120,8 @@
                             <constraint firstItem="qZR-9B-Abq" firstAttribute="leading" secondItem="am8-wn-gwF" secondAttribute="leading" id="E3l-6A-jGd"/>
                             <constraint firstAttribute="trailing" secondItem="qZR-9B-Abq" secondAttribute="trailing" id="bIr-hw-xqD"/>
                             <constraint firstItem="qZR-9B-Abq" firstAttribute="top" secondItem="am8-wn-gwF" secondAttribute="top" id="iK7-kg-Hai"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="t2E-Y0-vr1" secondAttribute="trailing" id="lpf-nj-OP8"/>
-                            <constraint firstItem="t2E-Y0-vr1" firstAttribute="leading" secondItem="am8-wn-gwF" secondAttribute="leadingMargin" id="nJM-vX-lcZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="t2E-Y0-vr1" secondAttribute="trailing" constant="-16" id="lpf-nj-OP8"/>
+                            <constraint firstItem="t2E-Y0-vr1" firstAttribute="leading" secondItem="am8-wn-gwF" secondAttribute="leadingMargin" constant="-16" id="nJM-vX-lcZ"/>
                             <constraint firstItem="sMB-zT-3Km" firstAttribute="top" secondItem="t2E-Y0-vr1" secondAttribute="bottom" id="p5B-q8-dwI"/>
                         </constraints>
                     </view>
@@ -128,17 +131,17 @@
                         <outlet property="numberOfGistsLabel" destination="tF2-Q2-daB" id="usy-fG-ZMd"/>
                         <outlet property="numberOfReposLabel" destination="n5x-BH-DFt" id="eDf-rK-Op2"/>
                         <outlet property="userNameLabel" destination="cXx-0j-qjJ" id="8qf-Br-wAS"/>
-                        <segue destination="B3f-JT-w0Y" kind="presentation" id="dRY-52-smQ"/>
+                        <segue destination="B3f-JT-w0Y" kind="presentation" identifier="showCamera" id="dRY-52-smQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7iJ-cq-YqQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-88.125" y="155"/>
         </scene>
-        <!--Code Reader View Controller-->
+        <!--Code Scanner View Controller-->
         <scene sceneID="FTc-0O-ntM">
             <objects>
-                <viewController id="B3f-JT-w0Y" customClass="QRCodeReaderViewController" customModule="Gistter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="B3f-JT-w0Y" customClass="CodeScannerViewController" customModule="Gistter" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AuC-Ce-YCU"/>
                         <viewControllerLayoutGuide type="bottom" id="B4L-Gb-Tjc"/>
@@ -151,9 +154,6 @@
                                 <rect key="frame" x="280" y="30" width="30" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="X"/>
-                                <connections>
-                                    <action selector="closeCameraButtonTapped:" destination="B3f-JT-w0Y" eventType="touchUpInside" id="Xeq-Yu-r3N"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -163,12 +163,30 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="closeButton" destination="UxU-YP-izB" id="cuz-oa-dpK"/>
+                        <segue destination="rqr-mu-lbg" kind="show" identifier="showComments" id="xMt-bu-Foa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HlW-O3-ZmE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="812" y="155"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="v1l-Ue-xQa">
+            <objects>
+                <viewController id="rqr-mu-lbg" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ceG-Ch-1ny"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mu8-5b-a1H"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Kmb-S1-XcR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.95686274770000002" green="0.41176471110000001" blue="0.21176470820000001" alpha="1" colorSpace="deviceRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gQg-sW-eFj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1661" y="155"/>
         </scene>
     </scenes>
     <resources>

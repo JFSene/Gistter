@@ -44,13 +44,13 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        loginButton.setTitle("Sign in with GitHub", for: .normal)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+	override func viewWillDisappear(_ animated: Bool) {
+		super.viewWillDisappear(animated)
+
+	}
     
 
 	//MARK: - ACTIONS
@@ -137,6 +137,7 @@ class LoginViewController: UIViewController {
 					let data = try response.responseData()
 					DispatchQueue.main.async {
 						self.userImage = UIImage(data: data)
+						self.loginButton.setTitle("Sign in with GitHub", for: .normal)
 						self.presentHome(self.userImage!, segueIdentifier: "showHome")
 					}
 				}

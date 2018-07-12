@@ -43,6 +43,9 @@ class HomeViewController: UIViewController {
 		dismiss(animated: true, completion: nil)
 	}
 
+	@IBAction func callCameraButtonTapped(_ sender: UIButton) {
+		performSegue(withIdentifier: "showCamera", sender: nil)
+	}
 
     /*
     // MARK: - Navigation
