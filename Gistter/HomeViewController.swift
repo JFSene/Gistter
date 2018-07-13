@@ -8,6 +8,8 @@
 
 import UIKit
 import BarcodeScanner
+import p2_OAuth2
+import AVFoundation
 
 class HomeViewController: UIViewController {
 	//MARK: - OUTLETS
@@ -37,17 +39,25 @@ class HomeViewController: UIViewController {
 		numberOfReposLabel.text = String(describing: numberOfRepos!)
 		userNameLabel.text = userName!
 
+
     }
+
+	override var prefersStatusBarHidden : Bool {
+		return true
+	}
 
 	//MARK: - ACTIONS
 	@IBAction func logOutButtonTapped(_ sender: UIButton) {
+		LoginViewController.oauth2.forgetTokens()
 		dismiss(animated: true, completion: nil)
 	}
 
 	@IBAction func callCameraButtonTapped(_ sender: UIButton) {
-		let viewController = makeBarcodeScannerViewController()
-		viewController.title = "Barcode Scanner"
-		present(viewController, animated: true, completion: nil)
+//		let viewController = makeBarcodeScannerViewController()
+//		viewController.title = "Barcode Scanner"
+//		present(viewController, animated: true, completion: nil)
+
+		performSegue(withIdentifier: "showCamera", sender: nil)
 	}
 
 
@@ -58,6 +68,7 @@ class HomeViewController: UIViewController {
 		viewController.dismissalDelegate = self
 		return viewController
 	}
+
 
 
     /*
@@ -77,12 +88,11 @@ extension HomeViewController: BarcodeScannerCodeDelegate {
 	func barcodeScanner(_ controller: BarcodeScannerController, didCaptureCode code: String, type: String) {
 		print("Barcode Data: \(code)")
 		print("Symbology Type: \(type)")
-
-		DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
-			controller.resetWithError()
-		}
+		controller.dismiss(animated: true, completion: nil)
 
 	}
+
+
 }
 
 // MARK: - BarcodeScannerErrorDelegate

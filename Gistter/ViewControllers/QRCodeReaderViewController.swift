@@ -14,6 +14,7 @@ class QRCodeReaderViewController: UIViewController, AVCaptureMetadataOutputObjec
 	@IBOutlet weak var closeButton: UIButton!
 	var video = AVCaptureVideoPreviewLayer()
 
+	@IBOutlet weak var square: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,19 +42,32 @@ class QRCodeReaderViewController: UIViewController, AVCaptureMetadataOutputObjec
 		video.frame = view.layer.bounds
 		view.layer.addSublayer(video)
 
+		self.view.bringSubview(toFront: square)
+		self.view.bringSubview(toFront: closeButton)
 		session.startRunning()
 
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-	//MARK: - ACTIONS
-	@IBAction func closeCameraButtonTapped(_ sender: UIButton) {
-		dismiss(animated: true, completion: nil)
+	func captureOutput(_ captureOutput: AVCaptureOutput!, didOutputMetadataObjects metadataObjects: [Any]!, from connection: AVCaptureConnection!) {
+
+		if metadataObjects != nil && metadataObjects.count != 0
+		{
+			if let object = metadataObjects[0] as? AVMetadataMachineReadableCodeObject
+			{
+				if object.type == AVMetadataObjectTypeQRCode
+				{
+					let alert = UIAlertController(title: "QR Code", message: object.stringValue, preferredStyle: .alert)
+					alert.addAction(UIAlertAction(title: "Retake", style: .default, handler: nil))
+					alert.addAction(UIAlertAction(title: "Copy", style: .default, handler: { (nil) in
+						UIPasteboard.general.string = object.stringValue
+					}))
+
+					present(alert, animated: true, completion: nil)
+				}
+			}
+		}
 	}
+
 
 
     /*
