@@ -13,4 +13,10 @@ Gistter is a Gist Reader where you can open gists using a QRCode
 There is a mocked logic to simulate the camera and make a api call to a sample gist, so you can test it on the simulator
 
 # else
-Just use the camera as a QRCode Reader i as you normaly would.
+Scan one of these QRCodes for quick testing
+
+<a href="https://imgbb.com/"><img src="https://image.ibb.co/mL4e4J/gist001.png" alt="gist001" border="0"></a>
+<br />
+<a href="https://imgbb.com/"><img src="https://image.ibb.co/jWGsPJ/gist002.png" alt="gist002" border="0"></a>
+<br />
+<a href="https://imgbb.com/"><img src="https://image.ibb.co/jHNXPJ/gist003.png" alt="gist003" border="0"></a>
