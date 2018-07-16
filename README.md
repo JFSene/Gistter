@@ -10,7 +10,11 @@ Gistter is a Gist Reader where you can open gists using a QRCode
 - Scan a Gist QRCode to visualise the content, read comments and comment yourself
 
 # if Simulator 
-There is a mocked logic to simulate the camera and make a api call to a sample gist, so you can test it on the simulator
+There is a mocked logic to simulate the camera and make a api call to a sample gist, 
+so you can test it on the simulator.
+
+<iframe src="https://appetize.io/embed/3fzyr3d0aq893gu00j3dhd1e8m?device=iphone6&scale=100&autoplay=false&orientation=portrait&deviceColor=black" width="416px" height="870px" frameborder="0" scrolling="no">
+</iframe>
 
 # else
 Scan one of these QRCodes for quick testing
