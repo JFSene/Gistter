@@ -1,0 +1,21 @@
+PODS:
+  - Alamofire (4.4.0)
+  - BarcodeScanner (2.0.0)
+  - ObjectMapper (2.2.6)
+  - p2.OAuth2 (3.0.3)
+
+DEPENDENCIES:
+  - Alamofire
+  - BarcodeScanner
+  - ObjectMapper
+  - p2.OAuth2 (~> 3.0)
+
+SPEC CHECKSUMS:
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  BarcodeScanner: 266ab4b479d407b74bc4b473fa5020b4523ad9e3
+  ObjectMapper: 042708195cc46c20871cbcbec0453826398273fd
+  p2.OAuth2: 63d8d3e366ac2c43bfe8bfa13b42cfeb908c314e
+
+PODFILE CHECKSUM: ab225f8af927098040f72db151e5c185af54ca2f
+
+COCOAPODS: 1.2.1
