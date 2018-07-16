@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "45D5DCBC113DFF66A91F5BFD8326C860"
+               BlueprintIdentifier = "0267B92A08F51E926B1DA4966B52D4DA"
                BuildableName = "Pods_Gistter.framework"
                BlueprintName = "Pods-Gistter"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "45D5DCBC113DFF66A91F5BFD8326C860"
+            BlueprintIdentifier = "0267B92A08F51E926B1DA4966B52D4DA"
             BuildableName = "Pods_Gistter.framework"
             BlueprintName = "Pods-Gistter"
             ReferencedContainer = "container:Pods.xcodeproj">

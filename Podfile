@@ -6,8 +6,7 @@ target 'Gistter' do
   use_frameworks!
 
   # Pods for Gistter
-	pod 'ObjectMapper'
   	pod 'Alamofire'
+	pod 'PKHUD', '~> 4.0'
 	pod 'p2.OAuth2', '~> 3.0'
-	pod 'BarcodeScanner'
 end

@@ -29,6 +29,7 @@ class LoginViewController: UIViewController {
 	var numberofGists: Int?
 	var userName: String?
 
+
 	static var oauth2 = OAuth2CodeGrant(settings: [
 		"client_id": "8ae913c685556e73a16f",                         // yes, this client-id and secret will work!
 		"client_secret": "60d81efcc5293fd1d096854f4eee0764edb2da5d",
@@ -39,19 +40,19 @@ class LoginViewController: UIViewController {
 		"secret_in_body": true,                                      // GitHub does not accept client secret in the Authorization header
 		"verbose": true,
 		] as OAuth2JSON)
-	
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
 
-        loginButton.setTitle("Try it Free With ", for: .normal)
-    }
+	override func viewDidLoad() {
+		super.viewDidLoad()
+
+		loginButton.setTitle("Try it Free With ", for: .normal)
+	}
 
 	override func viewWillDisappear(_ animated: Bool) {
 		super.viewWillDisappear(animated)
 
 	}
-    
+
 
 	//MARK: - ACTIONS
 	@IBAction func signInEmbedded(_ sender: UIButton?) {
@@ -66,9 +67,6 @@ class LoginViewController: UIViewController {
 		LoginViewController.oauth2.authConfig.authorizeContext = self
 		let loader = OAuth2DataLoader(oauth2: LoginViewController.oauth2)
 		self.loader = loader
-		print(loader.oauth2.accessToken)
-
-
 
 
 		loader.perform(request: userDataRequest) { response in
@@ -88,6 +86,7 @@ class LoginViewController: UIViewController {
 		return request
 	}
 
+	
 	func didGetUserdata(dict: [String: Any], loader: OAuth2DataLoader?) {
 		DispatchQueue.main.async {
 			if let username = dict["login"] as? String {
@@ -115,7 +114,7 @@ class LoginViewController: UIViewController {
 			if let error = error {
 				print("Authorization went wrong: \(error)")
 			}
-			
+
 		}
 	}
 
@@ -159,21 +158,19 @@ class LoginViewController: UIViewController {
 	}
 
 
-    // MARK: - Navigation
+	// MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-		if segue.identifier == "showHome"{
-			let homeVC = segue.destination as! HomeViewController
-			homeVC.numberOfRepos = numberOfRepos
-			homeVC.numberofGists = numberofGists
-			homeVC.userName = userName
-			homeVC.userImage = userImage!
+	// In a storyboard-based application, you will often want to do a little preparation before navigation
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		if let navVC = segue.destination as? UINavigationController {
+			if let homeVC = navVC.viewControllers[0] as? HomeViewController {
+				homeVC.numberOfRepos = numberOfRepos
+				homeVC.numberofGists = numberofGists
+				homeVC.userName = userName
+				homeVC.userImage = userImage!
+			}
 		}
-
-
-    }
-
-
-
+	}
 }
+
+

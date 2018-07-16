@@ -9,17 +9,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>BarcodeScanner-BarcodeScanner.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>BarcodeScanner.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>ObjectMapper.xcscheme</key>
+		<key>PKHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -37,17 +27,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>0267B92A08F51E926B1DA4966B52D4DA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>29EEEC9E0608911AEE79862A99EEA2B5</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>2D0E1FF1272770259C68078F549263EB</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>45D5DCBC113DFF66A91F5BFD8326C860</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -57,12 +42,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CD6C9FB6B052E1CF663F8A56041EA163</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>EFAAB8230EA40F1F8FE61671783A5DEF</key>
+		<key>D7A75F149082140741FC1E0B5B2863C8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
