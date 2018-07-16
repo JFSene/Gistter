@@ -1,5 +1,6 @@
 # Gistter
 Gistter is a Gist Reader where you can open gists using a QRCode
+![alt text](https://drive.google.com/open?id=15wCT7TvzQgVEKjPuYn0dyMI8KTbSWRXy)
 
 # Build Instructions
 - Clone or download the project
