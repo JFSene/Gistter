@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1782CAD820F6F4D000608E23 /* APIErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1782CAD520F6F4D000608E23 /* APIErrorResponse.swift */; };
-		1782CAD920F6F4D000608E23 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1782CAD620F6F4D000608E23 /* APIManager.swift */; };
-		1782CADA20F6F4D000608E23 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1782CAD720F6F4D000608E23 /* APIRouter.swift */; };
-		1782CADC20F70A5D00608E23 /* QRCodeReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1782CADB20F70A5D00608E23 /* QRCodeReaderViewController.swift */; };
-		1782CADE20F718EA00608E23 /* CodeScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1782CADD20F718EA00608E23 /* CodeScannerViewController.swift */; };
+		17752F2A20F8E344002E0C36 /* Util2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17752F2820F8E344002E0C36 /* Util2.swift */; };
+		17752F4820F8FED9002E0C36 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17752F4720F8FED9002E0C36 /* APIManager.swift */; };
+		17752F4A20F8FF2E002E0C36 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17752F4920F8FF2E002E0C36 /* BaseResponse.swift */; };
+		17752F4C20F8FFCD002E0C36 /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17752F4B20F8FFCD002E0C36 /* URLs.swift */; };
+		17752F4E20F90090002E0C36 /* GistService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17752F4D20F90090002E0C36 /* GistService.swift */; };
+		17752F5220F906D4002E0C36 /* Files.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17752F4F20F906D4002E0C36 /* Files.swift */; };
+		17752F5320F906D4002E0C36 /* Json4Swift_Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17752F5020F906D4002E0C36 /* Json4Swift_Base.swift */; };
+		17752F5420F906D4002E0C36 /* PulseButton.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17752F5120F906D4002E0C36 /* PulseButton.swift.swift */; };
+		17752F5720F90819002E0C36 /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17752F5520F90819002E0C36 /* AlertHelper.swift */; };
 		17B6CD2F20F6897D00FA0515 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B6CD2E20F6897D00FA0515 /* AppDelegate.swift */; };
 		17B6CD3420F6897E00FA0515 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17B6CD3220F6897E00FA0515 /* Main.storyboard */; };
 		17B6CD3620F6897E00FA0515 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17B6CD3520F6897E00FA0515 /* Assets.xcassets */; };
@@ -19,15 +23,21 @@
 		17B6CD4520F696E800FA0515 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B6CD4420F696E800FA0515 /* LoginViewController.swift */; };
 		17B6CD4720F6995300FA0515 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17B6CD4620F6995300FA0515 /* Home.storyboard */; };
 		17B6CD4920F6998600FA0515 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B6CD4820F6998600FA0515 /* HomeViewController.swift */; };
+		17EEC13A20F822C20001E593 /* square.png in Resources */ = {isa = PBXBuildFile; fileRef = 17EEC13920F822C20001E593 /* square.png */; };
+		17FB52A420FCC24B0062EBA5 /* GistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FB52A320FCC24B0062EBA5 /* GistViewController.swift */; };
 		C72A4F72BC1CCE95CB2FD44E /* Pods_Gistter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A25E315725FA2209E4961EBD /* Pods_Gistter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1782CAD520F6F4D000608E23 /* APIErrorResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIErrorResponse.swift; sourceTree = "<group>"; };
-		1782CAD620F6F4D000608E23 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
-		1782CAD720F6F4D000608E23 /* APIRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
-		1782CADB20F70A5D00608E23 /* QRCodeReaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QRCodeReaderViewController.swift; path = ViewControllers/QRCodeReaderViewController.swift; sourceTree = "<group>"; };
-		1782CADD20F718EA00608E23 /* CodeScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CodeScannerViewController.swift; path = ViewControllers/CodeScannerViewController.swift; sourceTree = "<group>"; };
+		17752F2820F8E344002E0C36 /* Util2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util2.swift; sourceTree = "<group>"; };
+		17752F4720F8FED9002E0C36 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIManager.swift; path = Service/APIManager.swift; sourceTree = "<group>"; };
+		17752F4920F8FF2E002E0C36 /* BaseResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		17752F4B20F8FFCD002E0C36 /* URLs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
+		17752F4D20F90090002E0C36 /* GistService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GistService.swift; sourceTree = "<group>"; };
+		17752F4F20F906D4002E0C36 /* Files.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Files.swift; sourceTree = "<group>"; };
+		17752F5020F906D4002E0C36 /* Json4Swift_Base.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Json4Swift_Base.swift; sourceTree = "<group>"; };
+		17752F5120F906D4002E0C36 /* PulseButton.swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PulseButton.swift.swift; sourceTree = "<group>"; };
+		17752F5520F90819002E0C36 /* AlertHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
 		17B6CD2B20F6897D00FA0515 /* Gistter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gistter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17B6CD2E20F6897D00FA0515 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17B6CD3320F6897E00FA0515 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -37,6 +47,8 @@
 		17B6CD4420F696E800FA0515 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ViewControllers/LoginViewController.swift; sourceTree = "<group>"; };
 		17B6CD4620F6995300FA0515 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Home.storyboard; path = Storyboards/Home.storyboard; sourceTree = "<group>"; };
 		17B6CD4820F6998600FA0515 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		17EEC13920F822C20001E593 /* square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = square.png; sourceTree = "<group>"; };
+		17FB52A320FCC24B0062EBA5 /* GistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GistViewController.swift; sourceTree = "<group>"; };
 		A25E315725FA2209E4961EBD /* Pods_Gistter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gistter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA6D9E69DE44E9ABD225AB2A /* Pods-Gistter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gistter.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gistter/Pods-Gistter.release.xcconfig"; sourceTree = "<group>"; };
 		ED3D408CE296DF3129BFE238 /* Pods-Gistter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gistter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gistter/Pods-Gistter.debug.xcconfig"; sourceTree = "<group>"; };
@@ -54,6 +66,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17752F3120F8EB15002E0C36 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				17752F4F20F906D4002E0C36 /* Files.swift */,
+				17752F5020F906D4002E0C36 /* Json4Swift_Base.swift */,
+				17752F5120F906D4002E0C36 /* PulseButton.swift.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		17752F4420F8F57C002E0C36 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				17752F4D20F90090002E0C36 /* GistService.swift */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
 		17B6CD2220F6897D00FA0515 = {
 			isa = PBXGroup;
 			children = (
@@ -75,12 +105,14 @@
 		17B6CD2D20F6897D00FA0515 /* Gistter */ = {
 			isa = PBXGroup;
 			children = (
+				17EEC13020F8132B0001E593 /* Utils */,
 				17B6CD4020F68A2D00FA0515 /* Network */,
 				17B6CD2E20F6897D00FA0515 /* AppDelegate.swift */,
 				17B6CD4320F696AC00FA0515 /* ViewControllers */,
 				17B6CD3220F6897E00FA0515 /* Main.storyboard */,
 				17B6CD4620F6995300FA0515 /* Home.storyboard */,
 				17B6CD3520F6897E00FA0515 /* Assets.xcassets */,
+				17EEC13920F822C20001E593 /* square.png */,
 				17B6CD3720F6897E00FA0515 /* LaunchScreen.storyboard */,
 				17B6CD3A20F6897E00FA0515 /* Info.plist */,
 			);
@@ -90,9 +122,11 @@
 		17B6CD4020F68A2D00FA0515 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				1782CAD520F6F4D000608E23 /* APIErrorResponse.swift */,
-				1782CAD620F6F4D000608E23 /* APIManager.swift */,
-				1782CAD720F6F4D000608E23 /* APIRouter.swift */,
+				17752F4720F8FED9002E0C36 /* APIManager.swift */,
+				17752F4B20F8FFCD002E0C36 /* URLs.swift */,
+				17752F4920F8FF2E002E0C36 /* BaseResponse.swift */,
+				17752F4420F8F57C002E0C36 /* Service */,
+				17752F3120F8EB15002E0C36 /* Models */,
 			);
 			name = Network;
 			sourceTree = "<group>";
@@ -102,10 +136,18 @@
 			children = (
 				17B6CD4420F696E800FA0515 /* LoginViewController.swift */,
 				17B6CD4820F6998600FA0515 /* HomeViewController.swift */,
-				1782CADD20F718EA00608E23 /* CodeScannerViewController.swift */,
-				1782CADB20F70A5D00608E23 /* QRCodeReaderViewController.swift */,
+				17FB52A320FCC24B0062EBA5 /* GistViewController.swift */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		17EEC13020F8132B0001E593 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				17752F2820F8E344002E0C36 /* Util2.swift */,
+				17752F5520F90819002E0C36 /* AlertHelper.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		41568E785B6272EA15B61DF0 /* Pods */ = {
@@ -160,8 +202,7 @@
 				TargetAttributes = {
 					17B6CD2A20F6897D00FA0515 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = V743F22FA8;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -190,6 +231,7 @@
 			files = (
 				17B6CD3920F6897E00FA0515 /* LaunchScreen.storyboard in Resources */,
 				17B6CD3620F6897E00FA0515 /* Assets.xcassets in Resources */,
+				17EEC13A20F822C20001E593 /* square.png in Resources */,
 				17B6CD3420F6897E00FA0515 /* Main.storyboard in Resources */,
 				17B6CD4720F6995300FA0515 /* Home.storyboard in Resources */,
 			);
@@ -250,14 +292,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1782CAD820F6F4D000608E23 /* APIErrorResponse.swift in Sources */,
-				1782CADA20F6F4D000608E23 /* APIRouter.swift in Sources */,
+				17752F4820F8FED9002E0C36 /* APIManager.swift in Sources */,
+				17752F5420F906D4002E0C36 /* PulseButton.swift.swift in Sources */,
+				17752F4C20F8FFCD002E0C36 /* URLs.swift in Sources */,
+				17752F5720F90819002E0C36 /* AlertHelper.swift in Sources */,
 				17B6CD4520F696E800FA0515 /* LoginViewController.swift in Sources */,
-				1782CADC20F70A5D00608E23 /* QRCodeReaderViewController.swift in Sources */,
-				1782CAD920F6F4D000608E23 /* APIManager.swift in Sources */,
+				17752F5320F906D4002E0C36 /* Json4Swift_Base.swift in Sources */,
+				17FB52A420FCC24B0062EBA5 /* GistViewController.swift in Sources */,
+				17752F4E20F90090002E0C36 /* GistService.swift in Sources */,
 				17B6CD2F20F6897D00FA0515 /* AppDelegate.swift in Sources */,
-				1782CADE20F718EA00608E23 /* CodeScannerViewController.swift in Sources */,
+				17752F2A20F8E344002E0C36 /* Util2.swift in Sources */,
 				17B6CD4920F6998600FA0515 /* HomeViewController.swift in Sources */,
+				17752F5220F906D4002E0C36 /* Files.swift in Sources */,
+				17752F4A20F8FF2E002E0C36 /* BaseResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,11 +430,14 @@
 			baseConfigurationReference = ED3D408CE296DF3129BFE238 /* Pods-Gistter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = V743F22FA8;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Gistter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.barbaruivastudios.Gistter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -397,11 +447,14 @@
 			baseConfigurationReference = DA6D9E69DE44E9ABD225AB2A /* Pods-Gistter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = V743F22FA8;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Gistter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.barbaruivastudios.Gistter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
