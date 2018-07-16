@@ -1,6 +1,6 @@
 # Gistter
 Gistter is a Gist Reader where you can open gists using a QRCode
-![alt text](https://drive.google.com/open?id=15wCT7TvzQgVEKjPuYn0dyMI8KTbSWRXy)
+<a href="https://imgbb.com/"><img src="https://image.ibb.co/iJOYWy/logo002.png" alt="logo002" border="0"></a><br /><a target='_blank' href='https://poetandpoem.com/William-Charles-Wentworth/poems'>William Charles Wentworth poems</a><br />
 
 # Build Instructions
 - Clone or download the project
