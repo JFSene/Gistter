@@ -13,8 +13,9 @@ Gistter is a Gist Reader where you can open gists using a QRCode
 There is a mocked logic to simulate the camera and make a api call to a sample gist, 
 so you can test it on the simulator.
 
-<iframe src="https://appetize.io/embed/3fzyr3d0aq893gu00j3dhd1e8m?device=iphone6&scale=100&autoplay=false&orientation=portrait&deviceColor=black" width="416px" height="870px" frameborder="0" scrolling="no">
-</iframe>
+OR
+
+[Try it here](https://appetize.io/app/3fzyr3d0aq893gu00j3dhd1e8m?device=iphone6s&scale=75&orientation=portrait&osVersion=11.4)
 
 # else
 Scan one of these QRCodes for quick testing
